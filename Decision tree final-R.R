@@ -54,9 +54,6 @@ bank
 #####Removing duration as per business requirement#####
 bank <- subset( bank, select = -duration )
 
-write.csv(bank,"C:/Users/daljeet/Desktop/Decision tree -R practice/bank02.csv")
-
-
 
 ####Converting category into factor level more than two using dummies#####
 library(dummies)
@@ -117,12 +114,7 @@ scaleContinuous = function(data) {
 bank01<-scaleContinuous(bank01)
 bank01
 
-write.csv(bank01,"C:/Users/daljeet/Desktop/Decision tree -R practice/bank05.csv")
 
-
-
-write.csv(bank01,"C:/Users/daljeet/Desktop/Decision tree -R practice/bank7.csv")
-tail(bank01)
 
 dim(bank01)
 
